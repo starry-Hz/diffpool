@@ -18,6 +18,13 @@ GNN methods with DIFFPOOL yields an average improvement of 5–10% accuracy
 on graph classification benchmarks, compared to all existing pooling approaches,
 achieving a new state-of-the-art on four out of five benchmark data sets.
 
-
 Paper link: https://arxiv.org/pdf/1806.08804.pdf
 
+
+运行命令,获取acc,loss的变化情况，结果如下图所
+
+tensorboard --logdir=log/syn1v2_base_l3_h20_o20
+
+![img](results/tensorboard.png "tensorboard")
+
+<!--...会写相对路径就行 -->
