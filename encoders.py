@@ -6,6 +6,10 @@ import torch.nn.functional as F
 import numpy as np
 
 from set2set import Set2Set
+# 增加日志
+import logging
+# 引用主程序中的日志记录器
+logger = logging.getLogger(__name__)
 
 # GCN basic operation
 class GraphConv(nn.Module):
@@ -68,9 +72,11 @@ class GcnEncoderGraph(nn.Module):
 
         for m in self.modules():
             if isinstance(m, GraphConv):
-                m.weight.data = init.xavier_uniform(m.weight.data, gain=nn.init.calculate_gain('relu'))
+                # m.weight.data = init.xavier_uniform(m.weight.data, gain=nn.init.calculate_gain('relu'))
+                nn.init.xavier_uniform_(m.weight, gain=nn.init.calculate_gain('relu'))
                 if m.bias is not None:
-                    m.bias.data = init.constant(m.bias.data, 0.0)
+                    # m.bias.data = init.constant(m.bias.data, 0.0)
+                    nn.init.constant_(m.bias, 0.0)
 
     def build_conv_layers(self, input_dim, hidden_dim, embedding_dim, num_layers, add_self,
             normalize=False, dropout=0.0):
@@ -388,6 +394,7 @@ class SoftPoolingGcnEncoder(GcnEncoderGraph):
             if batch_num_nodes is None:
                 num_entries = max_num_nodes * max_num_nodes * adj.size()[0]
                 print('Warning: calculating link pred loss without masking')
+                logging.info('Warning: calculating link pred loss without masking')
             else:
                 num_entries = np.sum(batch_num_nodes * batch_num_nodes)
                 embedding_mask = self.construct_mask(max_num_nodes, batch_num_nodes)
@@ -396,6 +403,7 @@ class SoftPoolingGcnEncoder(GcnEncoderGraph):
 
             self.link_loss = torch.sum(self.link_loss) / float(num_entries)
             #print('linkloss: ', self.link_loss)
+            # logging.info
             return loss + self.link_loss
         return loss
 

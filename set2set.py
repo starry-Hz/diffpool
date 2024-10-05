@@ -4,7 +4,10 @@ from torch.nn import init
 import torch.nn.functional as F
 
 import numpy as np
+import logging
 
+# 引用主程序中的日志记录器
+logger = logging.getLogger(__name__)
 class Set2Set(nn.Module):
     def __init__(self, input_dim, hidden_dim, act_fn=nn.ReLU, num_layers=1):
         '''
@@ -21,6 +24,7 @@ class Set2Set(nn.Module):
         self.num_layers = num_layers
         if hidden_dim <= input_dim:
             print('ERROR: Set2Set output_dim should be larger than input_dim')
+            logging.info('ERROR: Set2Set output_dim should be larger than input_dim')
         # the hidden is a concatenation of weighted sum of embedding and LSTM output
         self.lstm_output_dim = hidden_dim - input_dim
         self.lstm = nn.LSTM(hidden_dim, input_dim, num_layers=num_layers, batch_first=True)

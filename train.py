@@ -1,6 +1,12 @@
+# -*- coding: utf-8 -*-
+
 import matplotlib
+# matplotlib.rcParams['font.sans-serif'] = ['SimHei']     # 显示中文
+# # 为了坐标轴负号正常显示。matplotlib默认不支持中文，设置中文字体后，负号会显示异常。需要手动将坐标轴负号设为False才能正常显示负号。
+# matplotlib.rcParams['axes.unicode_minus'] = False
 import matplotlib.colors as colors
 import matplotlib.pyplot as plt
+plt.rcParams['font.family'] = 'Microsoft YaHei'
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
 import networkx as nx
@@ -26,6 +32,16 @@ import gen.data as datagen
 from graph_sampler import GraphSampler
 import load_data
 import util
+
+import seaborn
+import seaborn as sns
+# 增加日志
+import logging
+logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    filename='./log/diffpool_20241005.log',
+                    filemode='a')
 
 
 def evaluate(dataset, model, args, name='Validation', max_num_examples=None):
@@ -56,6 +72,7 @@ def evaluate(dataset, model, args, name='Validation', max_num_examples=None):
               'acc': metrics.accuracy_score(labels, preds),
               'F1': metrics.f1_score(labels, preds, average="micro")}
     print(name, " accuracy:", result['acc'])
+    logging.info("%s accuracy: %s", name, result['acc'])
     return result
 
 def gen_prefix(args):
@@ -196,6 +213,7 @@ def train(dataset, model, args, same_feat=True, val_dataset=None, test_dataset=N
         avg_loss = 0.0
         model.train()
         print('Epoch: ', epoch)
+        logging.info('Epoch: %s', epoch)
         for batch_idx, data in enumerate(dataset):
             begin_time = time.time()
             model.zero_grad()
@@ -231,6 +249,7 @@ def train(dataset, model, args, same_feat=True, val_dataset=None, test_dataset=N
             if args.linkpred:
                 writer.add_scalar('loss/linkpred_loss', model.link_loss, epoch)
         print('Avg loss: ', avg_loss, '; epoch time: ', total_time)
+        logging.info('Avg loss: %s; epoch time: %s', avg_loss, total_time)
         result = evaluate(dataset, model, args, name='Train', max_num_examples=100)
         train_accs.append(result['acc'])
         train_epochs.append(epoch)
@@ -252,14 +271,17 @@ def train(dataset, model, args, same_feat=True, val_dataset=None, test_dataset=N
                 writer.add_scalar('acc/test_acc', test_result['acc'], epoch)
 
         print('Best val result: ', best_val_result)
+        logging.info('Best val result: %s', best_val_result)
         best_val_epochs.append(best_val_result['epoch'])
         best_val_accs.append(best_val_result['acc'])
         if test_dataset is not None:
             print('Test result: ', test_result)
+            logging.info('Test result: %s', test_result)
             test_epochs.append(test_result['epoch'])
             test_accs.append(test_result['acc'])
 
-    matplotlib.style.use('seaborn')
+    # matplotlib.style.use('seaborn')
+    sns.set()
     plt.switch_backend('agg')
     plt.figure()
     plt.plot(train_epochs, util.exp_moving_avg(train_accs, 0.85), '-', lw=1)
@@ -269,6 +291,12 @@ def train(dataset, model, args, same_feat=True, val_dataset=None, test_dataset=N
     else:
         plt.plot(best_val_epochs, best_val_accs, 'bo')
         plt.legend(['train', 'val'])
+    
+    # 获取当前文件夹,并将结果保持至results中
+    current_dir = os.getcwd()
+    save_path = os.path.join(current_dir,'results')
+    if not os.path.exists(save_path):
+        os.makedirs(save_path)
     plt.savefig(gen_train_plt_name(args), dpi=600)
     plt.close()
     matplotlib.style.use('default')
@@ -291,13 +319,21 @@ def prepare_data(graphs, args, test_graphs=None, max_nodes=0):
     print('Num training graphs: ', len(train_graphs), 
           '; Num validation graphs: ', len(val_graphs),
           '; Num testing graphs: ', len(test_graphs))
+    logging.info('Num training graphs: %d; Num validation graphs: %d; Num testing graphs: %d', 
+             len(train_graphs), len(val_graphs), len(test_graphs))
 
     print('Number of graphs: ', len(graphs))
+    logging.info('Number of graphs: %d', len(graphs))
     print('Number of edges: ', sum([G.number_of_edges() for G in graphs]))
+    logging.info('Number of edges: %d', sum([G.number_of_edges() for G in graphs]))
     print('Max, avg, std of graph size: ', 
             max([G.number_of_nodes() for G in graphs]), ', '
             "{0:.2f}".format(np.mean([G.number_of_nodes() for G in graphs])), ', '
             "{0:.2f}".format(np.std([G.number_of_nodes() for G in graphs])))
+    logging.info('Max, avg, std of graph size: %d, %.2f, %.2f', 
+             max([G.number_of_nodes() for G in graphs]), 
+             np.mean([G.number_of_nodes() for G in graphs]), 
+             np.std([G.number_of_nodes() for G in graphs]))
 
     # minibatch
     dataset_sampler = GraphSampler(train_graphs, normalize=False, max_num_nodes=max_nodes,
@@ -349,6 +385,7 @@ def syn_community1v2(args, writer=None, export_graphs=False):
     train_dataset, val_dataset, test_dataset, max_num_nodes, input_dim, assign_input_dim = prepare_data(graphs, args)
     if args.method == 'soft-assign':
         print('Method: soft-assign')
+        logging.info('Method: soft-assign')
         model = encoders.SoftPoolingGcnEncoder(
                 max_num_nodes, 
                 input_dim, args.hidden_dim, args.output_dim, args.num_classes, args.num_gc_layers,
@@ -356,10 +393,12 @@ def syn_community1v2(args, writer=None, export_graphs=False):
                 bn=args.bn, linkpred=args.linkpred, assign_input_dim=assign_input_dim).cuda()
     elif args.method == 'base-set2set':
         print('Method: base-set2set')
+        logging.info('Method: base-set2set')
         model = encoders.GcnSet2SetEncoder(input_dim, args.hidden_dim, args.output_dim, 2,
                 args.num_gc_layers, bn=args.bn).cuda()
     else:
         print('Method: base')
+        logging.info('Method: base')
         model = encoders.GcnEncoderGraph(input_dim, args.hidden_dim, args.output_dim, 2,
                 args.num_gc_layers, bn=args.bn).cuda()
 
@@ -387,6 +426,7 @@ def syn_community2hier(args, writer=None):
 
     if args.method == 'soft-assign':
         print('Method: soft-assign')
+        logging.info('Method: soft-assign')
         model = encoders.SoftPoolingGcnEncoder(
                 max_num_nodes, 
                 input_dim, args.hidden_dim, args.output_dim, args.num_classes, args.num_gc_layers,
@@ -394,10 +434,12 @@ def syn_community2hier(args, writer=None):
                 bn=args.bn, linkpred=args.linkpred, args=args, assign_input_dim=assign_input_dim).cuda()
     elif args.method == 'base-set2set':
         print('Method: base-set2set')
+        logging.info('Method: base-set2set')
         model = encoders.GcnSet2SetEncoder(input_dim, args.hidden_dim, args.output_dim, 2,
                 args.num_gc_layers, bn=args.bn, args=args, assign_input_dim=assign_input_dim).cuda()
     else:
         print('Method: base')
+        logging.info('Method: base')
         model = encoders.GcnEncoderGraph(input_dim, args.hidden_dim, args.output_dim, 2,
                 args.num_gc_layers, bn=args.bn, args=args).cuda()
     train(train_dataset, model, args, val_dataset=val_dataset, test_dataset=test_dataset,
@@ -436,14 +478,17 @@ def benchmark_task(args, writer=None, feat='node-label'):
     
     if feat == 'node-feat' and 'feat_dim' in graphs[0].graph:
         print('Using node features')
+        logging.info('Using node features')
         input_dim = graphs[0].graph['feat_dim']
     elif feat == 'node-label' and 'label' in graphs[0].node[0]:
         print('Using node labels')
+        logging.info('Using node labels')
         for G in graphs:
             for u in G.nodes():
                 G.node[u]['feat'] = np.array(G.node[u]['label'])
     else:
         print('Using constant labels')
+        logging.info('Using constant labels')
         featgen_const = featgen.ConstFeatureGen(np.ones(args.input_dim, dtype=float))
         for G in graphs:
             featgen_const.gen_node_features(G)
@@ -452,6 +497,7 @@ def benchmark_task(args, writer=None, feat='node-label'):
             prepare_data(graphs, args, max_nodes=args.max_nodes)
     if args.method == 'soft-assign':
         print('Method: soft-assign')
+        logging.info('Method: soft-assign')
         model = encoders.SoftPoolingGcnEncoder(
                 max_num_nodes, 
                 input_dim, args.hidden_dim, args.output_dim, args.num_classes, args.num_gc_layers,
@@ -460,11 +506,13 @@ def benchmark_task(args, writer=None, feat='node-label'):
                 assign_input_dim=assign_input_dim).cuda()
     elif args.method == 'base-set2set':
         print('Method: base-set2set')
+        logging.info('Method: base-set2set')
         model = encoders.GcnSet2SetEncoder(
                 input_dim, args.hidden_dim, args.output_dim, args.num_classes,
                 args.num_gc_layers, bn=args.bn, dropout=args.dropout, args=args).cuda()
     else:
         print('Method: base')
+        logging.info('Method: base')
         model = encoders.GcnEncoderGraph(
                 input_dim, args.hidden_dim, args.output_dim, args.num_classes, 
                 args.num_gc_layers, bn=args.bn, dropout=args.dropout, args=args).cuda()
@@ -482,14 +530,17 @@ def benchmark_task_val(args, writer=None, feat='node-label'):
     
     if feat == 'node-feat' and 'feat_dim' in graphs[0].graph:
         print('Using node features')
+        logging.info('Using node features')
         input_dim = graphs[0].graph['feat_dim']
     elif feat == 'node-label' and 'label' in example_node:
         print('Using node labels')
+        logging.info('Using node labels')
         for G in graphs:
             for u in G.nodes():
                 util.node_dict(G)[u]['feat'] = np.array(util.node_dict(G)[u]['label'])
     else:
         print('Using constant labels')
+        logging.info('Using constant labels')
         featgen_const = featgen.ConstFeatureGen(np.ones(args.input_dim, dtype=float))
         for G in graphs:
             featgen_const.gen_node_features(G)
@@ -499,6 +550,7 @@ def benchmark_task_val(args, writer=None, feat='node-label'):
                 cross_val.prepare_val_data(graphs, args, i, max_nodes=args.max_nodes)
         if args.method == 'soft-assign':
             print('Method: soft-assign')
+            logging.info('Method: soft-assign')
             model = encoders.SoftPoolingGcnEncoder(
                     max_num_nodes, 
                     input_dim, args.hidden_dim, args.output_dim, args.num_classes, args.num_gc_layers,
@@ -507,11 +559,13 @@ def benchmark_task_val(args, writer=None, feat='node-label'):
                     assign_input_dim=assign_input_dim).cuda()
         elif args.method == 'base-set2set':
             print('Method: base-set2set')
+            logging.info('Method: base-set2set')
             model = encoders.GcnSet2SetEncoder(
                     input_dim, args.hidden_dim, args.output_dim, args.num_classes,
                     args.num_gc_layers, bn=args.bn, dropout=args.dropout, args=args).cuda()
         else:
             print('Method: base')
+            logging.info('Method: base')
             model = encoders.GcnEncoderGraph(
                     input_dim, args.hidden_dim, args.output_dim, args.num_classes, 
                     args.num_gc_layers, bn=args.bn, dropout=args.dropout, args=args).cuda()
@@ -524,6 +578,9 @@ def benchmark_task_val(args, writer=None, feat='node-label'):
     print(all_vals)
     print(np.max(all_vals))
     print(np.argmax(all_vals))
+    logging.info(all_vals)
+    logging.info(np.max(all_vals))
+    logging.info(np.argmax(all_vals))
     
     
 def arg_parse():
@@ -629,12 +686,15 @@ def main():
     path = os.path.join(prog_args.logdir, gen_prefix(prog_args))
     if os.path.isdir(path):
         print('Remove existing log dir: ', path)
+        logging.info('Remove existing log dir: %s', path)
         shutil.rmtree(path)
     writer = SummaryWriter(path)
     #writer = None
 
     os.environ['CUDA_VISIBLE_DEVICES'] = prog_args.cuda
     print('CUDA', prog_args.cuda)
+    logging.info('CUDA: %s', prog_args.cuda)
+
 
     if prog_args.bmname is not None:
         benchmark_task_val(prog_args, writer=writer)

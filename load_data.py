@@ -6,6 +6,11 @@ import re
 
 import util
 
+# 增加日志
+import logging
+# 引用主程序中的日志记录器
+logger = logging.getLogger(__name__)
+
 def read_graphfile(datadir, dataname, max_nodes=None):
     ''' Read data from https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets
         graph index starts with 1 in file
@@ -34,6 +39,7 @@ def read_graphfile(datadir, dataname, max_nodes=None):
         num_unique_node_labels = max(node_labels) + 1
     except IOError:
         print('No node labels')
+        logging.info('No node labels')
  
     filename_node_attrs=prefix + '_node_attributes.txt'
     node_attrs=[]
@@ -45,6 +51,7 @@ def read_graphfile(datadir, dataname, max_nodes=None):
                 node_attrs.append(np.array(attrs))
     except IOError:
         print('No node attributes')
+        logging.info('No node attributes')
        
     label_has_zero = False
     filename_graphs=prefix + '_graph_labels.txt'

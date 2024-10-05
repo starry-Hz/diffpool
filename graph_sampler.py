@@ -25,7 +25,8 @@ class GraphSampler(torch.utils.data.Dataset):
         self.feat_dim = util.node_dict(G_list[0])[0]['feat'].shape[0]
 
         for G in G_list:
-            adj = np.array(nx.to_numpy_matrix(G))
+            adj = np.array(nx.adjacency_matrix(G).todense())
+            # adj = np.array(nx.to_numpy_matrix(G)) # network库中使用的to_numpy_matrix已经被弃用
             if normalize:
                 sqrt_deg = np.diag(1.0 / np.sqrt(np.sum(adj, axis=0, dtype=float).squeeze()))
                 adj = np.matmul(np.matmul(sqrt_deg, adj), sqrt_deg)

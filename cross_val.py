@@ -7,6 +7,11 @@ import random
 
 from graph_sampler import GraphSampler
 
+# 增加日志
+import logging
+# 引用主程序中的日志记录器
+logger = logging.getLogger(__name__)
+
 def prepare_val_data(graphs, args, val_idx, max_nodes=0):
 
     random.shuffle(graphs)
@@ -24,6 +29,14 @@ def prepare_val_data(graphs, args, val_idx, max_nodes=0):
             max([G.number_of_nodes() for G in graphs]), ', '
             "{0:.2f}".format(np.mean([G.number_of_nodes() for G in graphs])), ', '
             "{0:.2f}".format(np.std([G.number_of_nodes() for G in graphs])))
+    logging.info('Num training graphs: ', len(train_graphs), 
+          '; Num validation graphs: ', len(val_graphs))
+    logging.info('Number of graphs: ', len(graphs))
+    logging.info('Number of edges: ', sum([G.number_of_edges() for G in graphs]))
+    logging.info('Max, avg, std of graph size: ', 
+            max([G.number_of_nodes() for G in graphs]), ', '
+            "{0:.2f}".format(np.mean([G.number_of_nodes() for G in graphs])), ', '
+            "{0:.2f}".format(np.std([G.number_of_nodes() for G in graphs])))   
 
     # minibatch
     dataset_sampler = GraphSampler(train_graphs, normalize=False, max_num_nodes=max_nodes,
