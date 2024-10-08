@@ -163,8 +163,11 @@ class GcnEncoderGraph(nn.Module):
         # unsqueeze()在第二个维度之后 max_nodes 之后增加一个维度,掩码的最终维度为 [batch_size, max_nodes, 1]
         return out_tensor.unsqueeze(2).cuda()
     
+    # 批量归一化
     def apply_bn(self, x):
-        ''' Batch normalization of 3D tensor x
+        ''' 
+        Batch normalization of 3D tensor x
+        对输入特征x进行批量归一化,BatchNorm1d用于归一化特征维度
         '''
         bn_module = nn.BatchNorm1d(x.size()[1]).cuda()
         return bn_module(x)
@@ -174,12 +177,20 @@ class GcnEncoderGraph(nn.Module):
         ''' Perform forward prop with graph convolution.
         Returns:
             Embedding matrix with dimension [batch_size x num_nodes x embedding]
+
+        x : [batch_size x num_nodes x input_dim],图中每个节点的输入特征
+        adj : [batch_size x num_nodes x num_nodes],图中节点的连接关系
+        conv_first : 第一层卷积层,输出维度为[batch_size, num_nodes, hidden_dim]
+        conv_block : 中间的卷积层,输出维度为[batch_size, num_nodes, hidden_dim]
+        conv_last : 最后一层卷积层,输出维度为[batch_size, num_nodes, embedding_dim]
+        embedding_mask : 可选的掩码,用于屏蔽无效节点特征
         '''
 
         x = conv_first(x, adj)
-        x = self.act(x)
+        x = self.act(x) # 激活函数ReLu
         if self.bn:
             x = self.apply_bn(x)
+        # 初始化一个列表 x_all,用于存储每一层卷积后的特征
         x_all = [x]
         #out_all = []
         #out, _ = torch.max(x, dim=1)
@@ -192,15 +203,22 @@ class GcnEncoderGraph(nn.Module):
             x_all.append(x)
         x = conv_last(x,adj)
         x_all.append(x)
-        # x_tensor: [batch_size x num_nodes x embedding]
+        # x_tensor: [batch_size x num_nodes x embedding] = [batch_size x num_nodes x (hidden_dim * (num_layers - 1) + embedding_dim)]
         x_tensor = torch.cat(x_all, dim=2)
         if embedding_mask is not None:
             x_tensor = x_tensor * embedding_mask
         return x_tensor
 
     def forward(self, x, adj, batch_num_nodes=None, **kwargs):
+    
+        '''
+        x : [batch_size x num_nodes x input_dim],图中每个节点的输入特征
+        adj : [batch_size x num_nodes x num_nodes],图中节点的连接关系
+        batch_num_nodes : 每个图中有效节点的数量,用于生成掩码,以处理图中节点数量不一致的情况
+        num_aggs == 2 : 每个图的特征可以同时通过最大池化和求和池化两种方式来聚合
+        '''
         # mask
-        max_num_nodes = adj.size()[1]
+        max_num_nodes = adj.size()[1]   # 每个图的最大节点数量
         if batch_num_nodes is not None:
             self.embedding_mask = self.construct_mask(max_num_nodes, batch_num_nodes)
         else:
@@ -211,8 +229,8 @@ class GcnEncoderGraph(nn.Module):
         x = self.act(x)
         if self.bn:
             x = self.apply_bn(x)
-        out_all = []
-        out, _ = torch.max(x, dim=1)
+        out_all = []    # 用于存储所有层的池化结果
+        out, _ = torch.max(x, dim=1)    # 对卷积后的特征 x 进行最大池化 (torch.max) 操作,沿着节点维度（dim=1）取最大值,得到每个图的全局特征
         out_all.append(out)
         for i in range(self.num_layers-2):
             x = self.conv_block[i](x,adj)
@@ -221,7 +239,7 @@ class GcnEncoderGraph(nn.Module):
                 x = self.apply_bn(x)
             out,_ = torch.max(x, dim=1)
             out_all.append(out)
-            if self.num_aggs == 2:
+            if self.num_aggs == 2:  # 如果 num_aggs == 2，则在最大池化后还对特征进行求和池化（torch.sum），将结果同样添加到 out_all 中
                 out = torch.sum(x, dim=1)
                 out_all.append(out)
         x = self.conv_last(x,adj)
@@ -232,18 +250,29 @@ class GcnEncoderGraph(nn.Module):
             out = torch.sum(x, dim=1)
             out_all.append(out)
         if self.concat:
+            # 所有池化结果沿特征维度（dim=1）进行拼接,形成最终的特征表示 output
             output = torch.cat(out_all, dim=1)
         else:
+            # 仅使用最后一层卷积的池化结果作为最终输出
             output = out
+        
         ypred = self.pred_model(output)
         #print(output.size())
         return ypred
 
+    # 计算预测值与真实标签之间的损失,用于模型的训练和优化
     def loss(self, pred, label, type='softmax'):
+        '''
+        pred : 预测值，形状为 [batch_size, label_dim]，表示每个样本的预测输出
+        label : 真实标签，形状为 [batch_size]，表示每个样本的真实类别
+        type : 损失类型，默认为 'softmax'，可选为 'softmax' 或 'margin'
+        '''
         # softmax + CE
         if type == 'softmax':
+            # 交叉熵损失函数 (F.cross_entropy) 计算损失
             return F.cross_entropy(pred, label, reduction='mean')
         elif type == 'margin':
+            # 多标签边缘损失 (margin)：用于多标签分类任务，鼓励正确类别的预测分数比其他类别高。
             batch_size = pred.size()[0]
             label_onehot = torch.zeros(batch_size, self.label_dim).long().cuda()
             label_onehot.scatter_(1, label.view(-1,1), 1)
