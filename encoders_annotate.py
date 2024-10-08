@@ -155,8 +155,8 @@ class GcnEncoderGraph(nn.Module):
         batch_size = len(batch_num_nodes)
         out_tensor = torch.zeros(batch_size, max_nodes)
 
-        # 将 packed_masks 中对应的掩码填充到 out_tensor 的前 num_nodes 个位置，剩下的元素保持为 0。
-        # 如果 batch_num_nodes[i] = 3，那么 out_tensor[i, :3] 会被填充为 1，其余部分保留为 0。
+        # 将 packed_masks 中对应的掩码填充到 out_tensor 的前 num_nodes 个位置,剩下的元素保持为 0。
+        # 如果 batch_num_nodes[i] = 3,那么 out_tensor[i, :3] 会被填充为 1,其余部分保留为 0。
         for i, mask in enumerate(packed_masks):
             out_tensor[i, :batch_num_nodes[i]] = mask
 
@@ -239,7 +239,7 @@ class GcnEncoderGraph(nn.Module):
                 x = self.apply_bn(x)
             out,_ = torch.max(x, dim=1)
             out_all.append(out)
-            if self.num_aggs == 2:  # 如果 num_aggs == 2，则在最大池化后还对特征进行求和池化（torch.sum），将结果同样添加到 out_all 中
+            if self.num_aggs == 2:  # 如果 num_aggs == 2,则在最大池化后还对特征进行求和池化（torch.sum）,将结果同样添加到 out_all 中
                 out = torch.sum(x, dim=1)
                 out_all.append(out)
         x = self.conv_last(x,adj)
@@ -263,18 +263,20 @@ class GcnEncoderGraph(nn.Module):
     # 计算预测值与真实标签之间的损失,用于模型的训练和优化
     def loss(self, pred, label, type='softmax'):
         '''
-        pred : 预测值，形状为 [batch_size, label_dim]，表示每个样本的预测输出
-        label : 真实标签，形状为 [batch_size]，表示每个样本的真实类别
-        type : 损失类型，默认为 'softmax'，可选为 'softmax' 或 'margin'
+        pred : 预测值,形状为 [batch_size, label_dim],表示每个样本的预测输出
+        label : 真实标签,形状为 [batch_size],表示每个样本的真实类别
+        type : 损失类型,默认为 'softmax',可选为 'softmax' 或 'margin'
         '''
         # softmax + CE
         if type == 'softmax':
             # 交叉熵损失函数 (F.cross_entropy) 计算损失
             return F.cross_entropy(pred, label, reduction='mean')
         elif type == 'margin':
-            # 多标签边缘损失 (margin)：用于多标签分类任务，鼓励正确类别的预测分数比其他类别高。
+            # 多标签边缘损失 (margin)：用于多标签分类任务,鼓励正确类别的预测分数比其他类别高。
             batch_size = pred.size()[0]
-            label_onehot = torch.zeros(batch_size, self.label_dim).long().cuda()
+            label_onehot = torch.zeros(batch_size, self.label_dim).long().cuda()    # [batch_size, label_dim]
+            # long() 函数将张量元素转换为 torch.int64 类型
+            # 使用 scatter_ 方法将 label 中的类别信息转换为独热编码 (one-hot encoding)
             label_onehot.scatter_(1, label.view(-1,1), 1)
             return torch.nn.MultiLabelMarginLoss()(pred, label_onehot)
             
@@ -303,7 +305,8 @@ class GcnSet2SetEncoder(GcnEncoderGraph):
         ypred = self.pred_model(out)
         return ypred
 
-
+# 在GcnEncoderGraph的基础上添加了图的池化操作(Pooling)以及节点分配模块(Assignment Module),以便在图卷积网络中进行软池化操作。
+# 软池化的目的是通过减少图的节点数量来降低图的复杂度,同时保留图的全局结构特征
 class SoftPoolingGcnEncoder(GcnEncoderGraph):
     def __init__(self, max_num_nodes, input_dim, hidden_dim, embedding_dim, label_dim, num_layers,
             assign_hidden_dim, assign_ratio=0.25, assign_num_layers=-1, num_pooling=1,
@@ -314,21 +317,40 @@ class SoftPoolingGcnEncoder(GcnEncoderGraph):
             num_layers: number of gc layers before each pooling
             num_nodes: number of nodes for each graph in batch
             linkpred: flag to turn on link prediction side objective
+
+        :param max_num_nodes : 每个图的最大节点数,确定池化时分配矩阵的大小
+        :param input_dim : 输入特征维度
+        :param hidden_dim : 隐藏层特征维度
+        :param embedding_dim : 嵌入特征维度
+        :param label_dim : 输出标签的维度
+        :param num_layers : 卷积层数
+        :param assign_hidden_dim : 分配矩阵的隐藏层维度
+        :param assign_ratio : 池化时,节点数量的压缩比例。默认值为 0.25,即每次池化节点数量变为原来的 1/4。
+        :param assign_num_layers : 分配模块 Assignment Module 的层数,默认值为 -1,表示与 num_layers 相同。
+        :param num_pooling : 池化的次数,决定整个模型进行几次池化操作
+        :param pred_hidden_dims : 预测模型的隐藏层维度
+        :param concat : 是否将所有层的输出特征连接在一起
+        :param bn : 是否使用批量归一化 Batch Normalization
+        :param dropout : 随机将一部分神经元关闭,以防止过拟合
+        :param linkpred : 是否使用链路预测损失
+        :param assign_input_dim : 分配模块的输入维度,默认值为 -1,即使用 input_dim
         '''
 
         super(SoftPoolingGcnEncoder, self).__init__(input_dim, hidden_dim, embedding_dim, label_dim,
                 num_layers, pred_hidden_dims=pred_hidden_dims, concat=concat, args=args)
-        add_self = not concat
+        add_self = not concat   # 表示是否在卷积操作中添加自节点特征
         self.num_pooling = num_pooling
         self.linkpred = linkpred
-        self.assign_ent = True
+        self.assign_ent = True  # 控制分配矩阵的熵损失（用于正则化）,默认值为 True
 
         # GC
+        # 三个模块列表,用于存放池化后每一层的卷积操作
         self.conv_first_after_pool = nn.ModuleList()
         self.conv_block_after_pool = nn.ModuleList()
         self.conv_last_after_pool = nn.ModuleList()
         for i in range(num_pooling):
             # use self to register the modules in self.modules()
+            # 使用 build_conv_layers 方法为每一次池化后的卷积创建新的卷积层组
             conv_first2, conv_block2, conv_last2 = self.build_conv_layers(
                     self.pred_input_dim, hidden_dim, embedding_dim, num_layers, 
                     add_self, normalize=True, dropout=dropout)
@@ -337,27 +359,32 @@ class SoftPoolingGcnEncoder(GcnEncoderGraph):
             self.conv_last_after_pool.append(conv_last2)
 
         # assignment
+        # 初始化分配矩阵的维度和层数,如果 assign_num_layers 和 assign_input_dim 没有指定,则将其分别设置为卷积层数 num_layers 和输入维度 input_dim
         assign_dims = []
         if assign_num_layers == -1:
             assign_num_layers = num_layers
         if assign_input_dim == -1:
             assign_input_dim = input_dim
 
+        # 创建模块列表用于存储分配矩阵的各个卷积层
         self.assign_conv_first_modules = nn.ModuleList()
         self.assign_conv_block_modules = nn.ModuleList()
         self.assign_conv_last_modules = nn.ModuleList()
         self.assign_pred_modules = nn.ModuleList()
-        assign_dim = int(max_num_nodes * assign_ratio)
+        assign_dim = int(max_num_nodes * assign_ratio)  # 计算池化后,图中节点的数量,决定了池化后新的节点数量
+        # 为每次池化创建对应的分配矩阵模块（即 Assignment Module）,并将每个模块的第一层卷积、中间层卷积和最后一层卷积添加到对应的模块列表中
         for i in range(num_pooling):
-            assign_dims.append(assign_dim)
+            assign_dims.append(assign_dim)  # 记录每次池化后图中节点数量的变化
             assign_conv_first, assign_conv_block, assign_conv_last = self.build_conv_layers(
                     assign_input_dim, assign_hidden_dim, assign_dim, assign_num_layers, add_self,
                     normalize=True)
             assign_pred_input_dim = assign_hidden_dim * (num_layers - 1) + assign_dim if concat else assign_dim
+            # []空列表,表示没有隐藏层 直接将输入特征映射到输出特征
             assign_pred = self.build_pred_layers(assign_pred_input_dim, [], assign_dim, num_aggs=1)
 
 
             # next pooling layer
+            # 更新下一层池化层的输入和分配维度
             assign_input_dim = self.pred_input_dim
             assign_dim = int(assign_dim * assign_ratio)
 
@@ -366,9 +393,11 @@ class SoftPoolingGcnEncoder(GcnEncoderGraph):
             self.assign_conv_last_modules.append(assign_conv_last)
             self.assign_pred_modules.append(assign_pred)
 
+        # 构建最终的预测模型。池化后每一层卷积结果都会拼接在一起,形成最终的特征表示输入到预测模型中
         self.pred_model = self.build_pred_layers(self.pred_input_dim * (num_pooling+1), pred_hidden_dims, 
                 label_dim, num_aggs=self.num_aggs)
 
+        # 对所有的 GraphConv 模块进行权重初始化,使用 Xavier 初始化方法,并将偏置初始化为 0
         for m in self.modules():
             if isinstance(m, GraphConv):
                 m.weight.data = init.xavier_uniform(m.weight.data, gain=nn.init.calculate_gain('relu'))
@@ -377,6 +406,7 @@ class SoftPoolingGcnEncoder(GcnEncoderGraph):
 
     def forward(self, x, adj, batch_num_nodes, **kwargs):
         if 'assign_x' in kwargs:
+            # 分配矩阵的输入特征x_a,否则x_a和x相同
             x_a = kwargs['assign_x']
         else:
             x_a = x
@@ -398,13 +428,14 @@ class SoftPoolingGcnEncoder(GcnEncoderGraph):
         #if embedding_mask is not None:
         #    self.assign_tensor = self.assign_tensor * embedding_mask
         # [batch_size x num_nodes x embedding_dim]
+        # 先通过原始 GcnEncoderGraph 中的图卷积模块对输入特征进行卷积操作,得到嵌入特征 embedding_tensor
         embedding_tensor = self.gcn_forward(x, adj,
                 self.conv_first, self.conv_block, self.conv_last, embedding_mask)
 
-        out, _ = torch.max(embedding_tensor, dim=1)
+        out, _ = torch.max(embedding_tensor, dim=1) # 沿节点维度取最大值,保留每个图在所有节点中的最大特征值,称为最大池化
         out_all.append(out)
         if self.num_aggs == 2:
-            out = torch.sum(embedding_tensor, dim=1)
+            out = torch.sum(embedding_tensor, dim=1)    # 沿节点维度对所有节点特征求和,提取图整体的特征值,因此称为求和池化
             out_all.append(out)
 
         for i in range(self.num_pooling):
@@ -413,19 +444,30 @@ class SoftPoolingGcnEncoder(GcnEncoderGraph):
             else:
                 embedding_mask = None
 
+            # 使用分配矩阵模块（Assignment Module）进行图卷积,得到节点与池化后的节点的分配概率
             self.assign_tensor = self.gcn_forward(x_a, adj, 
                     self.assign_conv_first_modules[i], self.assign_conv_block_modules[i], self.assign_conv_last_modules[i],
                     embedding_mask)
             # [batch_size x num_nodes x next_lvl_num_nodes]
+            # 对分配概率应用 Softmax 操作,表示每个原始节点在池化后的节点中分配的权重
             self.assign_tensor = nn.Softmax(dim=-1)(self.assign_pred_modules[i](self.assign_tensor))
+            # 对分配矩阵应用掩码,屏蔽掉无效的节点分配权重
             if embedding_mask is not None:
                 self.assign_tensor = self.assign_tensor * embedding_mask
 
             # update pooled features and adj matrix
-            x = torch.matmul(torch.transpose(self.assign_tensor, 1, 2), embedding_tensor)
-            adj = torch.transpose(self.assign_tensor, 1, 2) @ adj @ self.assign_tensor
+            # 更新池化后的特征x和邻接矩阵adj
+            # self.assign_tensor ：[batch_size, num_nodes, next_lvl_num_nodes] 
+            # embedding_tensor：[batch_size x num_nodes x embedding_dim]
+            # torch.transpose(self.assign_tensor, 1, 2)对矩阵的第1维和第二维进行转置,然后与embedding_tensor进行相乘
+            # x：[batch_size, next_lvl_num_nodes, embedding_dim] 
+            x = torch.matmul(torch.transpose(self.assign_tensor, 1, 2), embedding_tensor)     # 对应公式3
+            # adj：当前图的邻接矩阵,形状为 [batch_size, num_nodes, num_nodes]
+            # 新的邻接矩阵 adj形状为[batch_size, next_lvl_num_nodes, next_lvl_num_nodes],表示池化后的邻接关系
+            adj = torch.transpose(self.assign_tensor, 1, 2) @ adj @ self.assign_tensor  # 对应公式4
             x_a = x
         
+            # 对池化后的特征x和adj进行新的图卷积操作
             embedding_tensor = self.gcn_forward(x, adj, 
                     self.conv_first_after_pool[i], self.conv_block_after_pool[i],
                     self.conv_last_after_pool[i])
@@ -439,10 +481,12 @@ class SoftPoolingGcnEncoder(GcnEncoderGraph):
                 out_all.append(out)
 
 
+        # 将所有池化层的输出拼接在一起,形成最终的特征表示 output
         if self.concat:
             output = torch.cat(out_all, dim=1)
         else:
             output = out
+        # 使用预测模型对 output 进行预测,得到最终的输出 ypred
         ypred = self.pred_model(output)
         return ypred
 
