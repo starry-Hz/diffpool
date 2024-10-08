@@ -493,36 +493,57 @@ class SoftPoolingGcnEncoder(GcnEncoderGraph):
     def loss(self, pred, label, adj=None, batch_num_nodes=None, adj_hop=1):
         ''' 
         Args:
-            batch_num_nodes: numpy array of number of nodes in each graph in the minibatch.
+            batch_num_nodes: numpy array of number of nodes in each graph in the minibatch.每个图中有效节点的数量,用于掩码处理
+            adj_hop:用于链路预测损失时的邻接矩阵幂次,表示在多跳邻居关系下计算损失,默认为1
+        计算模型的总损失值,包括两部分：预测损失
+        预测损失 (super(SoftPoolingGcnEncoder, self).loss(pred, label))：由 GcnEncoderGraph 类的 loss 函数计算,主要用于衡量模型预测结果与真实标签之间的差异。
+        链路预测损失 (Link Prediction Loss)：用于保持原图在池化过程中结构上的一致性。链路预测损失旨在让池化后的图能够近似地保持原图节点之间的关系。
+        :param pred : 模型的预测输出
+        :param label : 真实标签
+        :param adj : 邻接矩阵
+        :param batch_num_nodes : 每个图中的节点数量
+        :param adj_hop : 邻接矩阵的阶数,默认为1。这个参数决定链路预测的范围,类似于图卷积中的多跳信息聚合。
         '''
-        eps = 1e-7
+        eps = 1e-7  # 设置小的数值eps,用于计算链路预测损失时,防止log函数中出现零值导致数值问题
+        # 调用父类 GcnEncoderGraph 的 loss 函数,计算模型的预测损失（例如交叉熵损失）
         loss = super(SoftPoolingGcnEncoder, self).loss(pred, label)
+
+        # 检查是否启用链路预测损失 (linkpred=True),如果启用,则计算链路预测损失
         if self.linkpred:
             max_num_nodes = adj.size()[1]
+            # pred_adj0 : [batch_size, num_nodes, num_nodes],表示池化后的节点分配回原始节点时的关系矩阵,@表示矩阵乘法
             pred_adj0 = self.assign_tensor @ torch.transpose(self.assign_tensor, 1, 2) 
             tmp = pred_adj0
             pred_adj = pred_adj0
             for adj_pow in range(adj_hop-1):
-                tmp = tmp @ pred_adj0
-                pred_adj = pred_adj + tmp
+                tmp = tmp @ pred_adj0   # 表示多跳邻接关系的近似,每次相乘表示多跳邻接关系的连接权重
+                pred_adj = pred_adj + tmp   # 累加每次计算的多跳邻接矩阵,得到整体的预测邻接矩阵
+            # torch.min() 是逐元素比较函数,它会在 pred_adj 和 torch.ones(1) 的对应位置上取最小值
             pred_adj = torch.min(pred_adj, torch.ones(1, dtype=pred_adj.dtype).cuda())
             #print('adj1', torch.sum(pred_adj0) / torch.numel(pred_adj0))
             #print('adj2', torch.sum(pred_adj) / torch.numel(pred_adj))
             #self.link_loss = F.nll_loss(torch.log(pred_adj), adj)
+
+            # 计算链路预测损失 self.link_loss
+            # 真实连接：对于连接存在的边（adj = 1）,损失为 -adj * torch.log(pred_adj + eps)；
+            # 非连接：对于不存在的边（adj = 0）,损失为 -(1 - adj) * torch.log(1 - pred_adj + eps)
             self.link_loss = -adj * torch.log(pred_adj+eps) - (1-adj) * torch.log(1-pred_adj+eps)
+
+            # 表示所有图的节点数量相同,直接使用最大节点数计算邻接矩阵的总元素数量 num_entries
             if batch_num_nodes is None:
-                num_entries = max_num_nodes * max_num_nodes * adj.size()[0]
+                num_entries = max_num_nodes * max_num_nodes * adj.size()[0] # 总的邻接关系数量
                 print('Warning: calculating link pred loss without masking')
                 logging.info('Warning: calculating link pred loss without masking')
             else:
+                # 如果提供了每个图的节点数量batch_num_nodes,生成掩码,屏蔽掉多余的计算,减少无效节点对链路预测损失的影响
                 num_entries = np.sum(batch_num_nodes * batch_num_nodes)
                 embedding_mask = self.construct_mask(max_num_nodes, batch_num_nodes)
                 adj_mask = embedding_mask @ torch.transpose(embedding_mask, 1, 2)
                 self.link_loss[(1-adj_mask).bool()] = 0.0
 
-            self.link_loss = torch.sum(self.link_loss) / float(num_entries)
+            self.link_loss = torch.sum(self.link_loss) / float(num_entries) # 对链路预测损失进行平均,得到归一化的链路预测损失值
             #print('linkloss: ', self.link_loss)
             # logging.info
-            return loss + self.link_loss
-        return loss
+            return loss + self.link_loss    # 返回总损失值（预测损失 + 链路预测损失）
+        return loss # 如果没有启用链路预测损失,则仅返回预测损失
 
