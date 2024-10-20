@@ -31,7 +31,7 @@ import logging
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                    filename='./log/diffpool_annotate_20241005.log',
+                    filename='./log/diffpool_annotate_20241020.log',
                     filemode='a')
 
 # 引入diffpool相关py
@@ -160,7 +160,8 @@ def log_graph(adj, batch_num_nodes, writer, epoch, batch_idx, assign_tensor=None
         num_nodes = batch_num_nodes[batch_idx[i]]
         adj_matrix = adj[batch_idx[i], :num_nodes, :num_nodes].cpu().data.numpy()
         # 使用 networkx 的 from_numpy_matrix 函数将邻接矩阵转换为图对象 G
-        G = nx.from_numpy_matrix(adj_matrix)
+        # G = nx.from_numpy_matrix(adj_matrix)
+        G = nx.from_numpy_array(adj_matrix)
         nx.draw(G, pos=nx.spring_layout(G), with_labels=True, node_color='#336699',
                 edge_color='grey', width=0.5, node_size=300,
                 alpha=0.7)
@@ -210,7 +211,8 @@ def log_graph(adj, batch_num_nodes, writer, epoch, batch_idx, assign_tensor=None
         label = label[: batch_num_nodes[batch_idx[i]]]
         node_colors = all_colors[label]
 
-        G = nx.from_numpy_matrix(adj_matrix)
+        # G = nx.from_numpy_matrix(adj_matrix)
+        G = nx.from_numpy_array(adj_matrix)
         # nx.draw()对节点进行着色   cmap=plt.get_cmap('Set1')选择颜色映射,确保不同类别的节点具有不同的颜色
         nx.draw(G, pos=nx.spring_layout(G), with_labels=False, node_color=node_colors,
                 edge_color='grey', width=0.4, node_size=50, cmap=plt.get_cmap('Set1'),
@@ -271,7 +273,8 @@ def train(dataset, model, args, same_feat=True, val_dataset=None, test_dataset=N
             label = Variable(data['label'].long()).cuda()
             batch_num_nodes = data['num_nodes'].int().numpy() if mask_nodes else None
             assign_input = Variable(data['assign_feats'].float(), requires_grad=False).cuda()
-
+            # print(f"h0 shape : {h0.shape}") # h0 shape : [20, 64, 10]
+            logging.info(f"h0 shape : {h0.shape},label shape : {label.shape},batch num nodes:{batch_num_nodes.shape},assign input : {assign_input.shape}")
             ypred = model(h0, adj, batch_num_nodes, assign_x=assign_input)
             # 根据不同的训练方法计算损失函数
             if not args.method == 'soft-assign' or not args.linkpred:
@@ -386,16 +389,17 @@ def prepare_data(graphs, args, test_graphs=None, max_nodes=0):
     else:
         train_idx = int(len(graphs) * args.train_ratio)
         train_graphs = graphs[:train_idx]
-        val_graphs = graph[train_idx:]
+        val_graphs = graphs[train_idx:]
     print('Num training graphs: ', len(train_graphs), 
           '; Num validation graphs: ', len(val_graphs),
           '; Num testing graphs: ', len(test_graphs))
     logging.info('Num training graphs: %d; Num validation graphs: %d; Num testing graphs: %d', 
              len(train_graphs), len(val_graphs), len(test_graphs))
+    # Num training graphs: 800; Num validation graphs: 100; Num testing graphs: 100
 
-    print('Number of graphs: ', len(graphs))
+    print('Number of graphs: ', len(graphs))    # 1000
     logging.info('Number of graphs: %d', len(graphs))
-    print('Number of edges: ', sum([G.number_of_edges() for G in graphs]))
+    print('Number of edges: ', sum([G.number_of_edges() for G in graphs]))  # 176910
     logging.info('Number of edges: %d', sum([G.number_of_edges() for G in graphs]))
     print('Max, avg, std of graph size: ', 
             max([G.number_of_nodes() for G in graphs]), ', '
@@ -443,6 +447,7 @@ def syn_community1v2(args, writer=None, export_graphs=False):
     # data
     # 生成两种图结构的数据 graphs1 和 graphs2
     # 生成一组 BA 图
+    # 生成 500 个 Barabási–Albert 图，每个图的节点数在 40 到 60 之间，每个新节点连接到 4 或 5 个现有节点。
     graphs1 = datagen.gen_ba(range(40, 60), range(4, 5), 500, 
             featgen.ConstFeatureGen(np.ones(args.input_dim, dtype=float)))
     for G in graphs1:
@@ -459,6 +464,7 @@ def syn_community1v2(args, writer=None, export_graphs=False):
         util.draw_graph_list(graphs2[:16], 4, 4, 'figs/ba2')
 
     graphs = graphs1 + graphs2
+    print(f"syn_community1v2 graphs: {graphs}")
     
     # max_num_nodes图中节点的最大数目, input_dim输入维度, assign_input_dim分配输入维度
     train_dataset, val_dataset, test_dataset, max_num_nodes, input_dim, assign_input_dim = prepare_data(graphs, args)
@@ -771,7 +777,7 @@ def arg_parse():
 
     # 参数的默认值
     """
-    datadir : 
+    datadir :  数据存储的目录路径
     dataset : 数据集名称
     logdir : TensorBoard 日志文件保存的目录路径
     max_nodes : 图中允许的最大节点数量（超过该节点数的图将被忽略）
@@ -797,7 +803,8 @@ def arg_parse():
     """
     parser.set_defaults(datadir='data',
                         logdir='log',
-                        dataset='syn1v2',
+                        # dataset='syn1v2',
+                        dataset='syn2hier',
                         max_nodes=1000,
                         cuda='1',
                         feature_type='default',
@@ -811,10 +818,12 @@ def arg_parse():
                         input_dim=10,
                         hidden_dim=20,
                         output_dim=20,
-                        num_classes=2,
+                        # num_classes=2,
+                        num_classes = 3,
                         num_gc_layers=3,
                         dropout=0.0,
-                        method='base',
+                        # method='base',
+                        method='soft-assign',
                         name_suffix='',
                         assign_ratio=0.1,
                         num_pool=1

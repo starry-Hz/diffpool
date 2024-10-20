@@ -7005,3 +7005,189 @@
 2024-10-05 21:35:23,649 - root - INFO - Test accuracy: 1.0
 2024-10-05 21:35:23,653 - root - INFO - Best val result: {'epoch': 999, 'loss': tensor(8.5197e-05, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 1.0}
 2024-10-05 21:35:23,653 - root - INFO - Test result: {'prec': np.float64(1.0), 'recall': np.float64(1.0), 'acc': 1.0, 'F1': np.float64(1.0), 'epoch': 999}
+2024-10-20 09:32:12,778 - root - INFO - Remove existing log dir: log/syn1v2_soft-assign_l3x1_ar10_h20_o20
+2024-10-20 09:32:12,793 - root - INFO - CUDA: 1
+2024-10-20 09:32:14,135 - root - INFO - Num training graphs: 800; Num validation graphs: 100; Num testing graphs: 100
+2024-10-20 09:32:14,135 - root - INFO - Number of graphs: 1000
+2024-10-20 09:32:14,188 - root - INFO - Number of edges: 176891
+2024-10-20 09:32:14,191 - root - INFO - Max, avg, std of graph size: 59, 49.30, 4.82
+2024-10-20 09:32:14,799 - root - INFO - Method: soft-assign
+2024-10-20 09:32:15,978 - root - INFO - Epoch: 0
+2024-10-20 09:44:30,022 - root - INFO - Remove existing log dir: log/syn2hier_soft-assign_l3x1_ar10_h20_o20
+2024-10-20 09:44:30,024 - root - INFO - CUDA: 1
+2024-10-20 09:44:38,330 - root - INFO - Num training graphs: 2400; Num validation graphs: 300; Num testing graphs: 300
+2024-10-20 09:44:38,330 - root - INFO - Number of graphs: 3000
+2024-10-20 09:44:38,513 - root - INFO - Number of edges: 649929
+2024-10-20 09:44:38,521 - root - INFO - Max, avg, std of graph size: 64, 59.99, 1.18
+2024-10-20 09:44:40,647 - root - INFO - Method: soft-assign
+2024-10-20 09:44:41,528 - root - INFO - Epoch: 0
+2024-10-20 09:47:07,248 - root - INFO - Remove existing log dir: log/syn2hier_soft-assign_l3x1_ar10_h20_o20
+2024-10-20 09:47:07,254 - root - INFO - CUDA: 1
+2024-10-20 09:47:16,755 - root - INFO - Num training graphs: 2400; Num validation graphs: 300; Num testing graphs: 300
+2024-10-20 09:47:16,756 - root - INFO - Number of graphs: 3000
+2024-10-20 09:47:17,001 - root - INFO - Number of edges: 648082
+2024-10-20 09:47:17,014 - root - INFO - Max, avg, std of graph size: 64, 59.99, 1.14
+2024-10-20 09:47:19,186 - root - INFO - Method: soft-assign
+2024-10-20 09:47:20,173 - root - INFO - Epoch: 0
+2024-10-20 10:49:51,641 - root - INFO - Remove existing log dir: log/syn2hier_soft-assign_l3x1_ar10_h20_o20
+2024-10-20 10:49:51,667 - root - INFO - CUDA: 1
+2024-10-20 10:50:00,145 - root - INFO - Num training graphs: 2400; Num validation graphs: 300; Num testing graphs: 300
+2024-10-20 10:50:00,145 - root - INFO - Number of graphs: 3000
+2024-10-20 10:50:00,390 - root - INFO - Number of edges: 648118
+2024-10-20 10:50:00,399 - root - INFO - Max, avg, std of graph size: 64, 59.99, 1.15
+2024-10-20 10:50:02,538 - root - INFO - Method: soft-assign
+2024-10-20 10:50:03,447 - root - INFO - Epoch: 0
+2024-10-20 11:37:11,242 - root - INFO - Remove existing log dir: log/syn2hier_soft-assign_l3x1_ar10_h20_o20
+2024-10-20 11:37:11,246 - root - INFO - CUDA: 1
+2024-10-20 11:37:20,386 - root - INFO - Num training graphs: 2400; Num validation graphs: 300; Num testing graphs: 300
+2024-10-20 11:37:20,386 - root - INFO - Number of graphs: 3000
+2024-10-20 11:37:20,626 - root - INFO - Number of edges: 648620
+2024-10-20 11:37:20,635 - root - INFO - Max, avg, std of graph size: 64, 60.01, 1.15
+2024-10-20 11:37:22,919 - root - INFO - Method: soft-assign
+2024-10-20 11:37:23,764 - root - INFO - Epoch: 0
+2024-10-20 15:06:53,078 - root - INFO - Remove existing log dir: log/syn2hier_soft-assign_l3x1_ar10_h20_o20
+2024-10-20 15:06:53,081 - root - INFO - CUDA: 1
+2024-10-20 15:06:59,273 - root - INFO - Num training graphs: 2400; Num validation graphs: 300; Num testing graphs: 300
+2024-10-20 15:06:59,273 - root - INFO - Number of graphs: 3000
+2024-10-20 15:06:59,425 - root - INFO - Number of edges: 648779
+2024-10-20 15:06:59,431 - root - INFO - Max, avg, std of graph size: 64, 59.95, 1.10
+2024-10-20 15:07:01,094 - root - INFO - Method: soft-assign
+2024-10-20 15:07:01,789 - root - INFO - Epoch: 0
+2024-10-20 15:07:08,601 - root - INFO - Avg loss: tensor(1.6258, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 3.0608646869659424
+2024-10-20 15:07:08,793 - root - INFO - Train accuracy: 0.475
+2024-10-20 15:07:09,043 - root - INFO - Validation accuracy: 0.42
+2024-10-20 15:07:09,286 - root - INFO - Test accuracy: 0.4066666666666667
+2024-10-20 15:07:09,290 - root - INFO - Best val result: {'epoch': 0, 'loss': tensor(1.6258, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.42}
+2024-10-20 15:07:09,291 - root - INFO - Test result: {'prec': 0.45246690734055356, 'recall': 0.4204545454545454, 'acc': 0.4066666666666667, 'F1': 0.4066666666666667, 'epoch': 0}
+2024-10-20 15:07:09,291 - root - INFO - Epoch: 1
+2024-10-20 15:07:11,555 - root - INFO - Avg loss: tensor(0.8022, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 1.9360835552215576
+2024-10-20 15:07:11,747 - root - INFO - Train accuracy: 0.6833333333333333
+2024-10-20 15:07:12,008 - root - INFO - Validation accuracy: 0.6
+2024-10-20 15:07:12,309 - root - INFO - Test accuracy: 0.5833333333333334
+2024-10-20 15:07:12,312 - root - INFO - Best val result: {'epoch': 1, 'loss': tensor(0.8022, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.6}
+2024-10-20 15:07:12,313 - root - INFO - Test result: {'prec': 0.6008276037687802, 'recall': 0.6195695897023331, 'acc': 0.5833333333333334, 'F1': 0.5833333333333334, 'epoch': 1}
+2024-10-20 15:07:12,313 - root - INFO - Epoch: 2
+2024-10-20 15:07:14,479 - root - INFO - Avg loss: tensor(0.5631, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 1.8228671550750732
+2024-10-20 15:07:14,683 - root - INFO - Train accuracy: 0.575
+2024-10-20 15:07:14,953 - root - INFO - Validation accuracy: 0.6266666666666667
+2024-10-20 15:07:15,259 - root - INFO - Test accuracy: 0.6666666666666666
+2024-10-20 15:07:15,262 - root - INFO - Best val result: {'epoch': 2, 'loss': tensor(0.5631, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.6266666666666667}
+2024-10-20 15:07:15,263 - root - INFO - Test result: {'prec': 0.66696488962676, 'recall': 0.6778999433866689, 'acc': 0.6666666666666666, 'F1': 0.6666666666666666, 'epoch': 2}
+2024-10-20 15:07:15,263 - root - INFO - Epoch: 3
+2024-10-20 15:07:17,376 - root - INFO - Avg loss: tensor(0.5565, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 1.7823004722595215
+2024-10-20 15:07:17,570 - root - INFO - Train accuracy: 0.6583333333333333
+2024-10-20 15:07:17,833 - root - INFO - Validation accuracy: 0.6133333333333333
+2024-10-20 15:07:18,103 - root - INFO - Test accuracy: 0.61
+2024-10-20 15:07:18,106 - root - INFO - Best val result: {'epoch': 2, 'loss': tensor(0.5631, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.6266666666666667}
+2024-10-20 15:07:18,107 - root - INFO - Test result: {'prec': 0.46078431372549017, 'recall': 0.6531986531986532, 'acc': 0.61, 'F1': 0.61, 'epoch': 3}
+2024-10-20 15:07:18,127 - root - INFO - Epoch: 4
+2024-10-20 15:07:20,426 - root - INFO - Avg loss: tensor(0.5349, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 1.9489679336547852
+2024-10-20 15:07:20,628 - root - INFO - Train accuracy: 0.6833333333333333
+2024-10-20 15:07:20,907 - root - INFO - Validation accuracy: 0.6266666666666667
+2024-10-20 15:07:21,228 - root - INFO - Test accuracy: 0.7
+2024-10-20 15:07:21,231 - root - INFO - Best val result: {'epoch': 4, 'loss': tensor(0.5349, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.6266666666666667}
+2024-10-20 15:07:21,232 - root - INFO - Test result: {'prec': 0.7096536375017388, 'recall': 0.7119871279163315, 'acc': 0.7, 'F1': 0.7, 'epoch': 4}
+2024-10-20 15:07:21,232 - root - INFO - Epoch: 5
+2024-10-20 15:07:23,683 - root - INFO - Avg loss: tensor(0.5499, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 2.0403270721435547
+2024-10-20 15:07:23,899 - root - INFO - Train accuracy: 0.5416666666666666
+2024-10-20 15:07:24,189 - root - INFO - Validation accuracy: 0.6333333333333333
+2024-10-20 15:07:24,510 - root - INFO - Test accuracy: 0.6533333333333333
+2024-10-20 15:07:24,513 - root - INFO - Best val result: {'epoch': 5, 'loss': tensor(0.5499, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.6333333333333333}
+2024-10-20 15:07:24,514 - root - INFO - Test result: {'prec': 0.5001987999710836, 'recall': 0.649403325288281, 'acc': 0.6533333333333333, 'F1': 0.6533333333333333, 'epoch': 5}
+2024-10-20 15:07:24,514 - root - INFO - Epoch: 6
+2024-10-20 15:07:26,543 - root - INFO - Avg loss: tensor(0.5480, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 1.681159496307373
+2024-10-20 15:07:26,755 - root - INFO - Train accuracy: 0.5833333333333334
+2024-10-20 15:07:27,030 - root - INFO - Validation accuracy: 0.6066666666666667
+2024-10-20 15:07:27,287 - root - INFO - Test accuracy: 0.6266666666666667
+2024-10-20 15:07:27,290 - root - INFO - Best val result: {'epoch': 5, 'loss': tensor(0.5499, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.6333333333333333}
+2024-10-20 15:07:27,291 - root - INFO - Test result: {'prec': 0.6722229515529884, 'recall': 0.6650166860343852, 'acc': 0.6266666666666667, 'F1': 0.6266666666666667, 'epoch': 6}
+2024-10-20 15:07:27,312 - root - INFO - Epoch: 7
+2024-10-20 15:07:29,553 - root - INFO - Avg loss: tensor(0.5203, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 1.878910779953003
+2024-10-20 15:07:29,754 - root - INFO - Train accuracy: 0.7
+2024-10-20 15:07:30,050 - root - INFO - Validation accuracy: 0.6233333333333333
+2024-10-20 15:07:30,352 - root - INFO - Test accuracy: 0.61
+2024-10-20 15:07:30,355 - root - INFO - Best val result: {'epoch': 5, 'loss': tensor(0.5499, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.6333333333333333}
+2024-10-20 15:07:30,356 - root - INFO - Test result: {'prec': 0.46078431372549017, 'recall': 0.6531986531986532, 'acc': 0.61, 'F1': 0.61, 'epoch': 7}
+2024-10-20 15:07:30,379 - root - INFO - Epoch: 8
+2024-10-20 15:07:32,873 - root - INFO - Avg loss: tensor(0.5340, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 2.133498430252075
+2024-10-20 15:07:33,076 - root - INFO - Train accuracy: 0.65
+2024-10-20 15:07:33,363 - root - INFO - Validation accuracy: 0.6133333333333333
+2024-10-20 15:07:33,650 - root - INFO - Test accuracy: 0.6166666666666667
+2024-10-20 15:07:33,654 - root - INFO - Best val result: {'epoch': 5, 'loss': tensor(0.5499, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.6333333333333333}
+2024-10-20 15:07:33,655 - root - INFO - Test result: {'prec': 0.6497095858827703, 'recall': 0.6557611513363726, 'acc': 0.6166666666666667, 'F1': 0.6166666666666667, 'epoch': 8}
+2024-10-20 15:07:33,676 - root - INFO - Epoch: 9
+2024-10-20 15:25:16,662 - root - INFO - Remove existing log dir: log/syn2hier_soft-assign_l3x1_ar10_h20_o20
+2024-10-20 15:25:16,665 - root - INFO - CUDA: 1
+2024-10-20 15:25:22,897 - root - INFO - Num training graphs: 2400; Num validation graphs: 300; Num testing graphs: 300
+2024-10-20 15:25:22,897 - root - INFO - Number of graphs: 3000
+2024-10-20 15:25:23,050 - root - INFO - Number of edges: 649715
+2024-10-20 15:25:23,056 - root - INFO - Max, avg, std of graph size: 64, 60.00, 1.16
+2024-10-20 15:25:24,718 - root - INFO - Method: soft-assign
+2024-10-20 15:25:25,424 - root - INFO - Epoch: 0
+2024-10-20 15:26:46,387 - root - INFO - Remove existing log dir: log/syn2hier_soft-assign_l3x1_ar10_h20_o20
+2024-10-20 15:26:46,390 - root - INFO - CUDA: 1
+2024-10-20 15:26:52,548 - root - INFO - Num training graphs: 2400; Num validation graphs: 300; Num testing graphs: 300
+2024-10-20 15:26:52,548 - root - INFO - Number of graphs: 3000
+2024-10-20 15:26:52,699 - root - INFO - Number of edges: 647760
+2024-10-20 15:26:52,705 - root - INFO - Max, avg, std of graph size: 64, 60.00, 1.13
+2024-10-20 15:26:54,375 - root - INFO - Method: soft-assign
+2024-10-20 15:26:55,068 - root - INFO - Epoch: 0
+2024-10-20 15:35:30,368 - root - INFO - Remove existing log dir: log/syn2hier_soft-assign_l3x1_ar10_h20_o20
+2024-10-20 15:35:30,371 - root - INFO - CUDA: 1
+2024-10-20 15:35:36,571 - root - INFO - Num training graphs: 2400; Num validation graphs: 300; Num testing graphs: 300
+2024-10-20 15:35:36,572 - root - INFO - Number of graphs: 3000
+2024-10-20 15:35:36,724 - root - INFO - Number of edges: 647947
+2024-10-20 15:35:36,730 - root - INFO - Max, avg, std of graph size: 64, 60.00, 1.19
+2024-10-20 15:35:38,472 - root - INFO - Method: soft-assign
+2024-10-20 15:35:39,203 - root - INFO - Epoch: 0
+2024-10-20 15:35:46,073 - root - INFO - Avg loss: tensor(1.0586, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 3.0163674354553223
+2024-10-20 15:35:46,281 - root - INFO - Train accuracy: 0.4583333333333333
+2024-10-20 15:35:46,555 - root - INFO - Validation accuracy: 0.4533333333333333
+2024-10-20 15:35:46,818 - root - INFO - Test accuracy: 0.43333333333333335
+2024-10-20 15:35:46,822 - root - INFO - Best val result: {'epoch': 0, 'loss': tensor(1.0586, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.4533333333333333}
+2024-10-20 15:35:46,823 - root - INFO - Test result: {'prec': 0.5782693195980513, 'recall': 0.42813086618396357, 'acc': 0.43333333333333335, 'F1': 0.43333333333333335, 'epoch': 0}
+2024-10-20 15:35:46,823 - root - INFO - Epoch: 1
+2024-10-20 15:35:49,084 - root - INFO - Avg loss: tensor(0.9746, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 1.8407745361328125
+2024-10-20 15:35:49,292 - root - INFO - Train accuracy: 0.4583333333333333
+2024-10-20 15:35:49,557 - root - INFO - Validation accuracy: 0.49666666666666665
+2024-10-20 15:35:49,869 - root - INFO - Test accuracy: 0.45666666666666667
+2024-10-20 15:35:49,873 - root - INFO - Best val result: {'epoch': 1, 'loss': tensor(0.9746, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.49666666666666665}
+2024-10-20 15:35:49,874 - root - INFO - Test result: {'prec': 0.445679012345679, 'recall': 0.4515151515151515, 'acc': 0.45666666666666667, 'F1': 0.45666666666666667, 'epoch': 1}
+2024-10-20 15:35:49,875 - root - INFO - Epoch: 2
+2024-10-20 15:35:52,143 - root - INFO - Avg loss: tensor(0.9548, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 1.8343603610992432
+2024-10-20 15:35:52,360 - root - INFO - Train accuracy: 0.48333333333333334
+2024-10-20 15:35:52,642 - root - INFO - Validation accuracy: 0.47
+2024-10-20 15:35:52,925 - root - INFO - Test accuracy: 0.4666666666666667
+2024-10-20 15:35:52,929 - root - INFO - Best val result: {'epoch': 1, 'loss': tensor(0.9746, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.49666666666666665}
+2024-10-20 15:35:52,930 - root - INFO - Test result: {'prec': 0.4493827160493827, 'recall': 0.45159560203807986, 'acc': 0.4666666666666667, 'F1': 0.4666666666666667, 'epoch': 2}
+2024-10-20 15:35:52,957 - root - INFO - Epoch: 3
+2024-10-20 15:35:55,244 - root - INFO - Avg loss: tensor(0.9401, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 1.8406920433044434
+2024-10-20 15:35:55,459 - root - INFO - Train accuracy: 0.475
+2024-10-20 15:35:55,726 - root - INFO - Validation accuracy: 0.47
+2024-10-20 15:35:56,047 - root - INFO - Test accuracy: 0.4666666666666667
+2024-10-20 15:35:56,051 - root - INFO - Best val result: {'epoch': 1, 'loss': tensor(0.9746, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.49666666666666665}
+2024-10-20 15:35:56,051 - root - INFO - Test result: {'prec': 0.4398608945916777, 'recall': 0.45159560203807986, 'acc': 0.4666666666666667, 'F1': 0.4666666666666667, 'epoch': 3}
+2024-10-20 15:35:56,078 - root - INFO - Epoch: 4
+2024-10-20 15:35:58,248 - root - INFO - Avg loss: tensor(0.9154, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 1.8166215419769287
+2024-10-20 15:35:58,460 - root - INFO - Train accuracy: 0.55
+2024-10-20 15:35:58,729 - root - INFO - Validation accuracy: 0.55
+2024-10-20 15:35:59,036 - root - INFO - Test accuracy: 0.5
+2024-10-20 15:35:59,039 - root - INFO - Best val result: {'epoch': 4, 'loss': tensor(0.9154, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.55}
+2024-10-20 15:35:59,040 - root - INFO - Test result: {'prec': 0.5221659662626186, 'recall': 0.516733708769107, 'acc': 0.5, 'F1': 0.5, 'epoch': 4}
+2024-10-20 15:35:59,041 - root - INFO - Epoch: 5
+2024-10-20 15:36:01,190 - root - INFO - Avg loss: tensor(0.8240, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 1.8053460121154785
+2024-10-20 15:36:01,398 - root - INFO - Train accuracy: 0.6083333333333333
+2024-10-20 15:36:01,713 - root - INFO - Validation accuracy: 0.5966666666666667
+2024-10-20 15:36:02,028 - root - INFO - Test accuracy: 0.5633333333333334
+2024-10-20 15:36:02,031 - root - INFO - Best val result: {'epoch': 5, 'loss': tensor(0.8240, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.5966666666666667}
+2024-10-20 15:36:02,032 - root - INFO - Test result: {'prec': 0.6211464921142341, 'recall': 0.5922384400260506, 'acc': 0.5633333333333334, 'F1': 0.5633333333333334, 'epoch': 5}
+2024-10-20 15:36:02,032 - root - INFO - Epoch: 6
+2024-10-20 15:36:04,369 - root - INFO - Avg loss: tensor(0.7978, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 1.9692511558532715
+2024-10-20 15:36:04,585 - root - INFO - Train accuracy: 0.5833333333333334
+2024-10-20 15:36:04,879 - root - INFO - Validation accuracy: 0.4666666666666667
+2024-10-20 15:36:05,182 - root - INFO - Test accuracy: 0.5033333333333333
+2024-10-20 15:36:05,185 - root - INFO - Best val result: {'epoch': 5, 'loss': tensor(0.8240, device='cuda:0', grad_fn=<DivBackward0>), 'acc': 0.5966666666666667}
+2024-10-20 15:36:05,186 - root - INFO - Test result: {'prec': 0.5025000000000001, 'recall': 0.5547370034095698, 'acc': 0.5033333333333333, 'F1': 0.5033333333333333, 'epoch': 6}
+2024-10-20 15:36:05,215 - root - INFO - Epoch: 7
+2024-10-20 15:36:30,813 - root - INFO - Remove existing log dir: log/syn2hier_soft-assign_l3x1_ar10_h20_o20
+2024-10-20 15:36:30,816 - root - INFO - CUDA: 1

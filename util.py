@@ -5,12 +5,14 @@ import numpy as np
 
 
 # ---- NetworkX compatibility
+# 返回图 G 的节点迭代器
 def node_iter(G):
     if float(nx.__version__)<2.0:
         return G.nodes()
     else:
         return G.nodes
 
+# 返回包含节点属性的字典
 def node_dict(G):
     if float(nx.__version__)>2.1:
         node_dict = G.nodes

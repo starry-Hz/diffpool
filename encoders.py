@@ -1,3 +1,6 @@
+#-*- coding : utf-8-*-
+# coding:unicode_escape
+
 import torch
 import torch.nn as nn
 from torch.nn import init
@@ -30,11 +33,13 @@ class GraphConv(nn.Module):
             self.bias = None
 
     def forward(self, x, adj):
+        # print(f"x shape : {x.shape},adj shape:{adj.shape}")   # x shape : torch.Size([20, 59, 10]),adj shape:torch.Size([20, 59, 59])
         if self.dropout > 0.001:
             x = self.dropout_layer(x)
         y = torch.matmul(adj, x)
         if self.add_self:
             y += x
+        # print(f"y.shape{y.shape},self.weight.shape{self.weight.shape}")
         y = torch.matmul(y,self.weight)
         if self.bias is not None:
             y = y + self.bias
@@ -301,6 +306,9 @@ class SoftPoolingGcnEncoder(GcnEncoderGraph):
                     m.bias.data = init.constant(m.bias.data, 0.0)
 
     def forward(self, x, adj, batch_num_nodes, **kwargs):
+        print(f"SoftPoolingGcnEncoder x shape:{x.shape},adj shape : {adj.shape},batch_num_nodes:{batch_num_nodes}")
+        # SoftPoolingGcnEncoder x shape:torch.Size([20, 59, 10]),adj shape : torch.Size([20, 59, 59]),
+        # batch_num_nodes:[50 48 55 58 45 46 43 50 50 49 54 57 44 47 46 45 52 48 53 48]
         if 'assign_x' in kwargs:
             x_a = kwargs['assign_x']
         else:
@@ -369,6 +377,7 @@ class SoftPoolingGcnEncoder(GcnEncoderGraph):
         else:
             output = out
         ypred = self.pred_model(output)
+        # print(ypred.shape)  # torch.Size([20, 2])
         return ypred
 
     def loss(self, pred, label, adj=None, batch_num_nodes=None, adj_hop=1):
@@ -376,6 +385,36 @@ class SoftPoolingGcnEncoder(GcnEncoderGraph):
         Args:
             batch_num_nodes: numpy array of number of nodes in each graph in the minibatch.
         '''
+        # print("##########################################################################")
+        print(f"pred shape:{pred.shape},label shape:{label.shape}") # pred shape:torch.Size([20, 2]),label shape:torch.Size([20])
+        # print(f"pred:{pred}")
+        # print(f"label:{label}")
+        '''
+        pred:tensor([[ 0.0192,  0.1666],
+        [ 0.2818, -0.0286],
+        [ 0.0656,  0.1292],
+        [ 0.0945,  0.1061],
+        [-0.0758,  0.2424],
+        [-0.0670,  0.2338],
+        [ 0.1008,  0.1030],
+        [-0.0286,  0.1994],
+        [ 0.4368, -0.1593],
+        [-0.0552,  0.2235],
+        [-0.0397,  0.2108],
+        [-0.0552,  0.2234],
+        [-0.0237,  0.1982],
+        [-0.0759,  0.2425],
+        [-0.0242,  0.1979],
+        [ 0.7200, -0.3823],
+        [ 0.0182,  0.1665],
+        [-0.0445,  0.2125],
+        [ 0.0907,  0.1071],
+        [-0.0616,  0.2288]], device='cuda:0', grad_fn=<AddmmBackward0>)
+        label:tensor([0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0],device='cuda:0')
+        
+        '''
+        # print("##########################################################################")
+        print(f"batch_num_nodes: {batch_num_nodes}")
         eps = 1e-7
         loss = super(SoftPoolingGcnEncoder, self).loss(pred, label)
         if self.linkpred:

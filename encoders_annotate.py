@@ -318,12 +318,12 @@ class SoftPoolingGcnEncoder(GcnEncoderGraph):
             num_nodes: number of nodes for each graph in batch
             linkpred: flag to turn on link prediction side objective
 
-        :param max_num_nodes : 每个图的最大节点数,确定池化时分配矩阵的大小
+        :param max_num_nodes : 每个图的最大节点数,确定池化时分配矩阵的大小 #
         :param input_dim : 输入特征维度
         :param hidden_dim : 隐藏层特征维度
-        :param embedding_dim : 嵌入特征维度
-        :param label_dim : 输出标签的维度
-        :param num_layers : 卷积层数
+        :param embedding_dim : 嵌入特征维度 #
+        :param label_dim : 输出标签的维度 #
+        :param num_layers : 卷积层数 #
         :param assign_hidden_dim : 分配矩阵的隐藏层维度
         :param assign_ratio : 池化时,节点数量的压缩比例。默认值为 0.25,即每次池化节点数量变为原来的 1/4。
         :param assign_num_layers : 分配模块 Assignment Module 的层数,默认值为 -1,表示与 num_layers 相同。

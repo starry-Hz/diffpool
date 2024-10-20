@@ -4,11 +4,13 @@ import numpy as np
 import random
 
 class FeatureGen(metaclass=abc.ABCMeta):
+    # 用于定义节点特征生成器,定义了抽象方法
     @abc.abstractmethod
     def gen_node_features(self, G):
         pass
 
 class ConstFeatureGen(FeatureGen):
+    # 为图中的每个节点生成常量特征,
     def __init__(self, val):
         self.val = val
 

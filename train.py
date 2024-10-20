@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*-
+#-*- coding : utf-8-*-
+# coding:unicode_escape
 
 import matplotlib
 # matplotlib.rcParams['font.sans-serif'] = ['SimHei']     # 显示中文
@@ -124,7 +125,8 @@ def log_graph(adj, batch_num_nodes, writer, epoch, batch_idx, assign_tensor=None
         ax = plt.subplot(2, 2, i+1)
         num_nodes = batch_num_nodes[batch_idx[i]]
         adj_matrix = adj[batch_idx[i], :num_nodes, :num_nodes].cpu().data.numpy()
-        G = nx.from_numpy_matrix(adj_matrix)
+        # G = nx.from_numpy_matrix(adj_matrix)
+        G = nx.from_numpy_array(adj_matrix)
         nx.draw(G, pos=nx.spring_layout(G), with_labels=True, node_color='#336699',
                 edge_color='grey', width=0.5, node_size=300,
                 alpha=0.7)
@@ -172,7 +174,8 @@ def log_graph(adj, batch_num_nodes, writer, epoch, batch_idx, assign_tensor=None
         label = label[: batch_num_nodes[batch_idx[i]]]
         node_colors = all_colors[label]
 
-        G = nx.from_numpy_matrix(adj_matrix)
+        # G = nx.from_numpy_matrix(adj_matrix)
+        G = nx.from_numpy_array(adj_matrix)
         nx.draw(G, pos=nx.spring_layout(G), with_labels=False, node_color=node_colors,
                 edge_color='grey', width=0.4, node_size=50, cmap=plt.get_cmap('Set1'),
                 vmin=0, vmax=num_clusters-1,
@@ -222,12 +225,18 @@ def train(dataset, model, args, same_feat=True, val_dataset=None, test_dataset=N
             label = Variable(data['label'].long()).cuda()
             batch_num_nodes = data['num_nodes'].int().numpy() if mask_nodes else None
             assign_input = Variable(data['assign_feats'].float(), requires_grad=False).cuda()
-
+            print(f"train h0 shape:{h0.shape},adj shape : {adj.shape}") # torch.Size([20, 59, 10]),adj shape : torch.Size([20, 59, 59])
             ypred = model(h0, adj, batch_num_nodes, assign_x=assign_input)
+            print(f"ypred shape: {ypred.shape}, ypred: {ypred[:5]}")  # 打印 ypred 的形状及前 5 个元素
             if not args.method == 'soft-assign' or not args.linkpred:
+                print(f"label shape: {label.shape}, label: {label[:5]}")  # 打印标签的形状及前 5 个元素
                 loss = model.loss(ypred, label)
+                print(f"loss value: {loss.item()}")  # 打印损失值
             else:
+                print(f"adj shape: {adj.shape}, adj: {adj[:5, :5]}")  # 打印邻接矩阵的形状及部分内容
+                print(f"batch_num_nodes: {batch_num_nodes}")  # 打印 batch_num_nodes 的内容
                 loss = model.loss(ypred, label, adj, batch_num_nodes)
+                print(f"loss value: {loss.item()}")  # 打印损失值
             loss.backward()
             nn.utils.clip_grad_norm_(model.parameters(), args.clip)
             optimizer.step()
@@ -315,7 +324,7 @@ def prepare_data(graphs, args, test_graphs=None, max_nodes=0):
     else:
         train_idx = int(len(graphs) * args.train_ratio)
         train_graphs = graphs[:train_idx]
-        val_graphs = graph[train_idx:]
+        val_graphs = graphs[train_idx:]
     print('Num training graphs: ', len(train_graphs), 
           '; Num validation graphs: ', len(val_graphs),
           '; Num testing graphs: ', len(test_graphs))
@@ -656,6 +665,7 @@ def arg_parse():
     parser.set_defaults(datadir='data',
                         logdir='log',
                         dataset='syn1v2',
+                        # dataset='syn2hier',
                         max_nodes=1000,
                         cuda='1',
                         feature_type='default',
@@ -672,7 +682,8 @@ def arg_parse():
                         num_classes=2,
                         num_gc_layers=3,
                         dropout=0.0,
-                        method='base',
+                        # method='base',
+                        method='soft-assign',
                         name_suffix='',
                         assign_ratio=0.1,
                         num_pool=1
@@ -703,6 +714,7 @@ def main():
     elif prog_args.dataset is not None:
         if prog_args.dataset == 'syn1v2':
             syn_community1v2(prog_args, writer=writer)
+            print(f"main syn_community1v2(prog_args, writer=writer)")
         if prog_args.dataset == 'syn2hier':
             syn_community2hier(prog_args, writer=writer)
 

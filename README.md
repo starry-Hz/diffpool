@@ -20,9 +20,13 @@ achieving a new state-of-the-art on four out of five benchmark data sets.
 
 Paper link: https://arxiv.org/pdf/1806.08804.pdf
 
-
 运行命令,获取acc,loss的变化情况，结果如下图所示
 
 tensorboard --logdir=log/syn1v2_base_l3_h20_o20
 
 ![img](results/tensorboard.png "tensorboard")
+
+
+# 生成数据
+
+利用了 `networkx`库来生成不同类型的图（网络），包括Barabási–Albert（BA）模型图、Erdős–Rényi（ER）图以及社区结构的图。
