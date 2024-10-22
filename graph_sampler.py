@@ -39,13 +39,6 @@ class GraphSampler(torch.utils.data.Dataset):
         # 获取图第一个图G_list[0]的节点字典,访问节点0的属性字典,获取该节点的feat(特征向量),最后通过.shape[0]获取该特征向量的维度
         # print(f"GraphSampler feat_dim : {self.feat_dim}")
         for G in G_list:
-            # 只绘制 G_list 中的第一个图
-            if G == G_list[0]:
-                plt.figure(figsize=(8, 6))
-                nx.draw(G, with_labels=True, node_color='lightblue', edge_color='gray', node_size=500)
-                plt.title("Graph 1")  # 将标题修改为更直观的信息，如 "Graph 1"
-                plt.show()
-            
             # 对每个图G,获取邻接矩阵并转换为numpy数组
             adj = np.array(nx.adjacency_matrix(G).todense())
             # adj = np.array(nx.to_numpy_matrix(G)) # network库中使用的to_numpy_matrix已经被弃用
