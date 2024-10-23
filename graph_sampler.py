@@ -140,7 +140,7 @@ class GraphSampler(torch.utils.data.Dataset):
             f"label: {self.label_all[idx]},\n"  # 去掉 .shape，因为它是一个整数
             f"num_nodes: {num_nodes if isinstance(num_nodes, (int, float)) else num_nodes.shape},\n"
             f"assign_feats: {self.assign_feat_all[idx].copy().shape if hasattr(self.assign_feat_all[idx], 'shape') else self.assign_feat_all[idx]}")
-        
+        print(f"assign_feat_dim{self.assign_feat_dim}")
         return {'adj':adj_padded,
                 'feats':self.feature_all[idx].copy(),
                 'label':self.label_all[idx],

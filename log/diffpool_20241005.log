@@ -14552,3 +14552,4618 @@
 2024-10-20 15:09:11,453 - root - INFO - Avg loss: tensor(0.6459, device='cuda:0', grad_fn=<DivBackward0>); epoch time: 0.6239454746246338
 2024-10-20 15:09:11,663 - root - INFO - Train accuracy: 0.5583333333333333
 2024-10-20 15:09:11,850 - root - INFO - Validation accuracy: 0.72
+2024-10-22 20:39:58,684 - root - INFO - CUDA: 1
+2024-10-22 20:39:59,645 - root - INFO - Num training graphs: 800; Num validation graphs: 100; Num testing graphs: 100
+2024-10-22 20:39:59,645 - root - INFO - Number of graphs: 1000
+2024-10-22 20:39:59,680 - root - INFO - Number of edges: 176032
+2024-10-22 20:39:59,682 - root - INFO - Max, avg, std of graph size: 59, 49.10, 4.87
+2024-10-22 20:40:00,121 - root - INFO - Method: soft-assign
+2024-10-22 20:40:00,993 - root - INFO - Epoch: 0
+2024-10-22 20:40:01,023 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,024 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,024 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,024 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,024 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,024 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,024 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,025 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,025 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,025 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,025 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,025 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,025 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,025 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,025 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,025 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,026 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,026 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,026 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,026 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,031 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,031 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,031 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,032 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,032 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,032 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,037 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,037 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,037 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,038 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,039 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,039 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,039 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,040 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,040 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,040 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,040 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,040 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,040 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,041 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,047 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,048 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,048 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,048 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,048 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,048 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,048 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,048 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,048 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,050 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:01,050 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,027 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,028 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,028 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,028 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,029 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,029 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,029 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,029 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,030 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,030 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,030 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,030 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,031 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,031 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,031 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,031 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,031 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,032 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,032 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,032 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,048 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,048 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,049 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,050 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,050 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,050 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,050 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,050 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,050 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,050 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,050 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,068 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,069 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,069 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,069 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,069 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,069 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,069 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,069 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,069 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,069 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,070 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,070 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,070 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,070 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,070 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,070 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,070 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,070 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,070 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,070 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,088 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,088 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,088 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,088 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,088 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,088 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,088 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,088 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,088 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,088 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,089 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,089 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,089 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,089 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,089 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,089 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,089 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,089 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,089 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,089 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,108 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,108 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,108 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,108 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,108 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,109 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,109 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,109 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,109 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,109 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,109 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,109 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,109 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,109 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,109 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,110 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,110 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,110 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,110 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,110 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,127 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,127 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,127 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,127 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,127 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,128 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,128 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,128 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,128 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,128 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,128 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,128 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,128 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,128 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,128 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,129 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,129 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,129 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,129 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,129 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,147 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,147 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,147 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,147 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,148 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,148 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,148 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,148 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,148 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,148 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,148 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,148 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,148 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,149 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,149 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,149 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,149 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,149 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,149 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,149 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,164 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,164 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,164 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,164 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,164 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,164 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,165 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,165 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,165 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,165 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,165 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,165 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,165 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,165 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,165 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,165 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,166 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,166 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,166 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,166 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,184 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,184 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,184 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,185 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,185 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,185 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,185 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,185 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,185 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,185 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,185 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,185 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,185 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,186 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,186 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,186 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,186 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,186 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,186 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,186 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,205 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,205 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,205 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,205 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,205 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,205 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,205 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,205 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,206 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,206 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,206 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,206 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,206 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,206 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,206 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,206 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,206 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,206 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,206 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,207 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,224 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,224 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,224 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,224 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,224 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,224 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,224 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,224 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,225 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,225 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,225 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,225 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,225 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,225 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,225 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,225 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,225 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,225 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,225 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,226 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,243 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,243 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,243 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,243 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,243 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,245 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,245 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,245 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,245 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,263 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,263 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,263 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,263 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,263 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,263 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,263 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,263 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,264 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,264 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,264 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,264 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,264 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,264 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,264 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,264 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,264 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,264 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,264 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,265 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,282 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,282 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,282 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,282 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,282 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,282 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,282 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,282 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,282 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,283 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,283 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,283 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,283 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,283 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,283 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,283 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,283 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,283 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,283 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,283 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,302 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,302 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,302 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,302 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,303 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,303 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,303 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,303 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,303 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,303 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,303 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,303 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,303 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,303 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,303 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,304 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,304 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,304 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,304 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,304 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,321 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,321 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,321 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,321 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,321 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,321 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,322 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,322 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,322 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,322 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,322 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,322 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,322 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,322 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,322 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,322 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,322 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,323 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,323 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,323 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,341 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,341 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,341 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,341 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,341 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,341 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,341 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,341 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,342 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,342 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,342 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,342 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,342 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,342 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,342 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,342 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,342 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,342 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,342 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,343 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,360 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,360 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,360 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,360 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,360 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,360 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,360 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,361 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,361 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,361 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,361 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,361 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,361 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,361 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,361 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,361 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,361 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,361 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,362 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,362 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,379 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,380 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,380 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,380 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,380 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,380 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,380 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,380 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,380 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,380 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,380 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,381 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,381 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,381 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,381 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,381 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,381 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,381 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,381 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,381 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,398 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,398 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,398 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,399 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,399 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,399 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,399 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,399 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,399 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,399 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,399 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,399 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,399 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,399 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,400 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,400 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,400 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,400 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,400 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:02,400 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:30,825 - root - INFO - Remove existing log dir: log/syn1v2_soft-assign_l3x1_ar10_h20_o20
+2024-10-22 20:40:30,827 - root - INFO - CUDA: 1
+2024-10-22 20:40:31,798 - root - INFO - Num training graphs: 800; Num validation graphs: 100; Num testing graphs: 100
+2024-10-22 20:40:31,798 - root - INFO - Number of graphs: 1000
+2024-10-22 20:40:31,832 - root - INFO - Number of edges: 176296
+2024-10-22 20:40:31,834 - root - INFO - Max, avg, std of graph size: 59, 49.17, 4.97
+2024-10-22 20:40:32,276 - root - INFO - Method: soft-assign
+2024-10-22 20:40:33,128 - root - INFO - Epoch: 0
+2024-10-22 20:40:33,165 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,166 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,166 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,166 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,166 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,166 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,166 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,166 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,166 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,167 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,167 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,167 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,167 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,167 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,167 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,167 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,168 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,168 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,168 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,168 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,173 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,173 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,174 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,174 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,174 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,178 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,178 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,179 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,179 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,180 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,180 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,180 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,180 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,180 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,180 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,181 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,181 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,181 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,182 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,182 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,187 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,187 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,187 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,187 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,187 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,187 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,187 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,187 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,187 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,187 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,187 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,188 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,188 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,188 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,188 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,188 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,188 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,188 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,188 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:33,188 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,105 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,105 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,106 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,106 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,106 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,107 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,107 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,107 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,107 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,108 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,108 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,108 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,108 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,109 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,109 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,109 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,109 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,110 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,110 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,110 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,124 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,125 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,125 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,125 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,125 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,125 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,125 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,125 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,125 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,125 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,126 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,126 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,126 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,126 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,126 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,126 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,126 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,126 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,126 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,126 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,142 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,142 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,142 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,142 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,142 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,142 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,142 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,142 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,143 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,143 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,143 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,143 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,143 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,143 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,143 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,143 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,143 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,143 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,144 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,144 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,159 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,159 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,159 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,159 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,159 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,159 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,159 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,159 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,160 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,160 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,160 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,160 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,160 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,160 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,160 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,160 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,160 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,161 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,161 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,161 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,175 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,176 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,176 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,176 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,176 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,176 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,176 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,176 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,176 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,176 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,177 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,177 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,177 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,177 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,177 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,177 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,177 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,177 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,177 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,177 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,192 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,192 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,192 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,193 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,193 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,193 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,193 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,193 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,193 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,193 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,193 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,193 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,194 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,194 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,194 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,194 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,194 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,194 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,194 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,194 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,209 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,209 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,209 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,209 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,210 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,210 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,210 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,210 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,210 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,210 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,210 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,210 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,210 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,211 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,211 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,211 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,211 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,211 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,211 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,211 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,226 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,226 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,226 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,226 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,226 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,227 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,227 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,227 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,227 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,227 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,227 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,227 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,227 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,227 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,227 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,228 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,228 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,228 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,228 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,228 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,243 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,243 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,243 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,243 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,243 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,243 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,243 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,243 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,244 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,245 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,245 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,259 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,260 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,260 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,260 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,260 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,260 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,260 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,260 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,260 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,260 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,260 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,261 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,261 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,261 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,261 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,261 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,261 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,261 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,261 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,261 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,276 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,276 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,276 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,276 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,276 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,277 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,277 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,277 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,277 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,277 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,277 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,277 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,277 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,277 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,277 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,278 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,278 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,278 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,278 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,278 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,293 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,293 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,293 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,293 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,293 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,293 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,293 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,294 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,294 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,294 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,294 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,294 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,294 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,294 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,294 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,294 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,294 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,294 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,295 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,295 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,310 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,310 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,310 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,310 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,310 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,310 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,310 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,311 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,311 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,311 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,311 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,311 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,311 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,311 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,311 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,311 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,311 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,311 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,312 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,312 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,327 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,327 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,327 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,327 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,327 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,327 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,327 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,327 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,327 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,328 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,328 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,328 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,328 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,328 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,328 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,328 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,328 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,328 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,328 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,328 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,346 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,346 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,346 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,346 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,346 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,346 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,346 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,346 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,346 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,347 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,347 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,347 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,347 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,347 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,347 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,347 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,347 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,347 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,347 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,347 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,365 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,365 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,365 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,365 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,365 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,365 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,365 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,365 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,365 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,365 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,366 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,366 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,366 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,366 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,366 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,366 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,366 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,366 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,366 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,366 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,384 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,384 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 59,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,384 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,384 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,384 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,384 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,384 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,384 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,384 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,384 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,384 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,385 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,385 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,385 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,385 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,385 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,385 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,385 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,385 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,385 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,403 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,403 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,403 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,403 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,403 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,403 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,403 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,403 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,403 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 45,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,404 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,404 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,404 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,404 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,404 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,404 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,404 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,404 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,404 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,404 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,404 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,422 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,422 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,422 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,422 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 47,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,422 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,422 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 51,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,422 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,422 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,422 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,423 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,423 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 40,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,423 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,423 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,423 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,423 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 58,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,423 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 52,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,423 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 56,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,423 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 57,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,423 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,423 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,441 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 54,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,441 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,441 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,441 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 42,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,441 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,441 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,441 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,441 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,442 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 53,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,442 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,442 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 46,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,442 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 49,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,442 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,442 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 43,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,442 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 55,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,442 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 48,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,442 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,442 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 44,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,442 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 1,
+num_nodes: 50,
+assign_feats: (59, 10)
+2024-10-22 20:40:34,442 - root - INFO - adj: (59, 59),
+feats: (59, 10),
+label: 0,
+num_nodes: 41,
+assign_feats: (59, 10)
